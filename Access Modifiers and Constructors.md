@@ -110,3 +110,126 @@ The publicMethod can be accessed from any other class in any package.
 
 
 
+
+
+## Constructor 
+
+
+In Java, a constructor is a special type of method that is used to initialize objects. Here’s a detailed overview of constructors in Java, including their types and how they work:
+
+### Basics of Constructors 
+
+
+**Purpose:**  Constructors are primarily used to initialize an object's state. Unlike methods, constructors are called automatically when a new instance of an object is created.
+
+**Name:**  The constructor must have the same name as the class itself.
+
+**No Return Type:**  Constructors do not have a return type, not even void.
+
+
+### Types of Constructors
+ 
+#### Default Constructor
+
+**Automatically Provided:**  If you do not explicitly define any constructor in your class, the Java compiler provides one for you. This default constructor is a no-argument constructor that calls the superclass's no-argument constructor.
+
+``` ruby 
+public class Animal {
+    // Default constructor automatically created if no constructor is defined
+}
+
+```
+
+#### No-Argument Constructor
+
+**Explicit Definition:**  You can explicitly define a no-argument constructor. It is similar to the default constructor but can include additional initialization code.
+
+``` ruby 
+public class Animal{
+    public Animal(){
+        System.out.println("An animal is created");
+    }
+}
+```
+
+### Parameterized Constructor
+
+**Initialization with Parameters:**  These constructors allow you to initialize your objects with specific values provided as parameters.
+
+```ruby 
+public class Animal {
+    String name;
+    public Animal(String name){
+        this.name = name;
+    }
+}
+```
+
+
+### Constructor Overloading
+
+**Multiple Constructors:**  Java allows you to have more than one constructor in a class, as long as each has a different parameter list (either different types or different number of parameters).
+
+```ruby
+public class Animal(){
+    String name;
+    int age;
+    
+    public Animal(){
+        this.name = "Dog";
+        this.age = age;
+    }
+
+    public Animal(String name){
+        this.name = name;
+    }
+    
+    public Animal(String name , int age){
+        this.name = name;
+        this.age = age;
+    }
+}
+```
+
+
+### Using this with Constructors
+
+**Calling Another Constructor:**  Within a constructor, you can use this to call another constructor in the same class. This is useful for constructor chaining.
+
+**Restrictions:**  The call to this() must be the first statement in a constructor.
+
+``` ruby 
+public class Animal{
+    String name;
+    int age;
+    public Animal(){
+        this("unkown" , 0); # calling parameterzed constructor
+    }
+    
+    public Animal(String name , int age){
+        this.name = name;
+        this.age = age;
+    }
+}
+```
+
+
+
+### Superclass Constructor Calls
+
+**Calling Superclass Constructor:**  If a class has a superclass, the constructor can call the superclass's constructor using super(). This call, if used, must also be the first statement in a constructor.
+
+```ruby
+public class Dog extends  Animal{
+    public Dog(){
+        super("Dog") #calling super clas's constructor
+    }
+}
+```
+
+
+Constructors are a fundamental aspect of object-oriented programming in Java, enabling explicit control over the initialization of objects.
+
+
+
+
