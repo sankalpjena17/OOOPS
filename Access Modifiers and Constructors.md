@@ -4,16 +4,22 @@ Access modifiers in Java are keywords used before class names and class members 
 
 
 **1.Private**
+
 **2.Default (no modifier)**
+
 **3.Protected**
+
 **4.Public**
 
 
 ### Private
 
 **Scope:**  Accessible only within the class it is declared.
+
 **Usage:**  Typically used for methods, fields, and constructors that should be hidden from the outside world.
+
 **Example:**  A private field can be accessed only within its own class.
+
 
 ```ruby
 private class Car{
@@ -32,7 +38,9 @@ In this example, both the model field and the display method are private, so the
 ### Default (Package-Private) 
 
 **Scope:**  No modifier is used, accessible within the same package.
+
 **Usage:**  If no access modifier is specified, the member or class is visible to all classes within the same package.
+
 **Example:**  Useful when you want package-wide access, but no visibility from other packages.
 
 ```ruby
@@ -50,7 +58,9 @@ The Helper class and the helpMethod method have package-level access and are not
 ### Protected
 
 **Scope:**  Accessible within the same package or subclasses in different packages.
+
 **Usage:**  Used when you want to allow a class member to be accessible to subclasses irrespective of their package.
+
 **Example:**  Useful in inheritance when a base class needs to expose some methods or fields to its derived classes. 
 
 ```ruby
@@ -74,7 +84,9 @@ The display method is accessible within the Dog class, which is a subclass of An
 ### Public
 
 **Scope:**  Accessible from any other class.
+
 **Usage:**  Typically used for methods and variables that are intended to be accessed from any other class.
+
 **Example:**  Most commonly used access level for public APIs of a class.
 
 ```ruby
