@@ -6,7 +6,7 @@ Object-Oriented Programming (OOP) is a programming paradigm based on the concept
 ## Core Concepts of OOP
 **1.Encapsulation:** This is the practice of keeping fields within a class private, then providing access to them via public methods. It's a protective barrier that keeps the data and code safe within the object and prevents outside interference and misuse.
 
-**2.Inheritance:**This is a way to form new classes using classes that have already been defined. The new classes, known as derived classes, inherit attributes and behaviors from the existing classes, which are called base classes. It allows for a hierarchy of classes that share a set of attributes and methods.
+**2.Inheritance:** This is a way to form new classes using classes that have already been defined. The new classes, known as derived classes, inherit attributes and behaviors from the existing classes, which are called base classes. It allows for a hierarchy of classes that share a set of attributes and methods.
 
 **3.Polymorphism:** This means having many forms. In OOP, polymorphism refers to the ability of a variable, function, or object to take on multiple forms. The most common use of polymorphism is when a parent class reference is used to refer to a child class object.
 
