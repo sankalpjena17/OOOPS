@@ -101,11 +101,12 @@ The publicMethod can be accessed from any other class in any package.
 
 ### Summary of Accessibility
 
-|Modifier       |  Class	| Package	| Subclass (same pkg)	|Subclass (diff pkg) | World|
- --------------  ----------- ----------- ----------------------- -------------------- ------
-|public	        |   Y      	|   Y	    | Y	                    |   Y	             |  Y   |
-|protected      |   Y	    |   Y	    | Y	                    |   Y	             |  N   |
-|no modifier	|   Y	    |   Y	    | Y	                    |   N	             |  N   |
-|private	    |   Y	    |   N	    | N	                    |   N	             |  N   |
+| Modifier     | Class | Package | Subclass (same pkg) | Subclass (diff pkg) | World |
+|--------------|-------|---------|---------------------|---------------------|-------|
+| public       | Y     | Y       | Y                   | Y                   | Y     |
+| protected    | Y     | Y       | Y                   | Y                   | N     |
+| no modifier  | Y     | Y       | Y                   | N                   | N     |
+| private      | Y     | N       | N                   | N                   | N     |
+
 
 
