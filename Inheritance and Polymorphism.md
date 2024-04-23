@@ -270,3 +270,4 @@ Compile-time refers to the phase in which the source code you write is translate
 ### Runtime
 
 Runtime refers to the period when the compiled program is actually running on the hardware. It begins when the program is started and terminates when the program ends. During runtime, the program interacts with the system’s hardware and resources to execute the compiled code.
+
